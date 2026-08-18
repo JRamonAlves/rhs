@@ -1,0 +1,8 @@
+services:
+  rhs-land:
+    image: jramonalves/rhs:latest
+    pull_policy: always
+    container_name: rhs-land
+    ports:
+      - "127.0.0.1:8090:80"
+    restart: unless-stopped
